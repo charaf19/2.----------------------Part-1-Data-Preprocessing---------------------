@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyN9N6y36u2LYELyvyK/homv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/charaf19/2.----------------------Part-1-Data-Preprocessing---------------------/blob/main/----------------------Part-1-Data-Preprocessing---------------------\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Importing the dataset"
+      ],
+      "metadata": {
+        "id": "FW0LGeHQzmHs"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "id": "TKnh-kVszdK2"
+      },
+      "outputs": [],
+      "source": [
+        "import numpy as np\n",
+        "import matplotlib as plt\n",
+        "import pandas as pd\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "how to read a csv from github \n",
+        "\n",
+        "\n",
+        "copy the raw link \n"
+      ],
+      "metadata": {
+        "id": "KyfmT1g67jwG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "url = 'https://raw.githubusercontent.com/charaf19/2.----------------------Part-1-Data-Preprocessing---------------------/main/Data.csv'\n",
+        "df1 = pd.read_csv(url)\n",
+        "print(df1)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "16jpR6VV5xyu",
+        "outputId": "5dc63bf8-fe99-4288-8595-724ed8dfe7e4"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "   Country   Age   Salary Purchased\n",
+            "0   France  44.0  72000.0        No\n",
+            "1    Spain  27.0  48000.0       Yes\n",
+            "2  Germany  30.0  54000.0        No\n",
+            "3    Spain  38.0  61000.0        No\n",
+            "4  Germany  40.0      NaN       Yes\n",
+            "5   France  35.0  58000.0       Yes\n",
+            "6    Spain   NaN  52000.0        No\n",
+            "7   France  48.0  79000.0       Yes\n",
+            "8  Germany  50.0  83000.0        No\n",
+            "9   France  37.0  67000.0       Yes\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
